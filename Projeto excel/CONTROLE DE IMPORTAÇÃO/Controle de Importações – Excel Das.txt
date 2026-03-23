@@ -1,0 +1,250 @@
+Controle de Importações – Excel Dashboard
+📌 Sobre o Projeto
+
+Desenvolvi este relatório no laboratório da DIO (Digital Innovation One) com o objetivo de criar um dashboard completo para controle de importações de jogos comprados em e-commerce, utilizando códigos de rastreio e tratamento de dados no Excel.
+
+O projeto simula um cenário real de acompanhamento de pedidos, categorizando:
+
+📦 Pedidos que estão para chegar
+
+⚠️ Pedidos com problema
+
+🔄 Pedidos que serão devolvidos
+
+🚚 Pedidos por status (ex: Shipped)
+
+🛠️ Técnicas e Funções Utilizadas
+
+O projeto foi desenvolvido com foco em tratamento de dados, automação e organização dinâmica, utilizando:
+
+🔎 PROC V (Procura Vertical)
+
+Cruzamento de informações entre planilhas
+
+Associação de pedidos com suas respectivas categorias e status
+
+🧹 Tratamento e Limpeza de Texto
+
+Utilizei funções para extrair e padronizar informações contidas dentro de colchetes nos registros:
+
+=SUBSTITUIR(D20;"[";"")
+=PROCURAR("[";C20)
+=EXT.TEXTO(C20;(PROCURAR("[";C20)+1);(PROCURAR("]";C20)-(PROCURAR("[";C20)+1)))
+=SUBSTITUIR(SUBSTITUIR(DIREITA(C21;5);"[";"");"]";"")
+
+📌 Objetivo:
+
+Remover caracteres especiais
+
+Extrair versão do jogo
+
+Separar informações estruturadas dentro de textos não padronizados
+
+🎯 Filtro Dinâmico
+=FILTRO(PEDIDOS!$B:$L;PEDIDOS!$H:$H=B49)
+
+Permitiu:
+
+Criar visualizações automáticas por status
+
+Separar pedidos conforme categoria
+
+Gerar relatórios dinâmicos sem necessidade de atualização manual
+
+⌨️ Atalhos Utilizados
+
+CTRL + E (Preenchimento Relâmpago) para padronização de dados
+
+Organização estruturada em abas (Rastreio | Pedidos | Lista)
+
+📊 Estrutura do Dashboard
+
+O relatório apresenta:
+
+Identificação do pedido (Order ID)
+
+Nome da nota
+
+Console
+
+Nome do jogo
+
+Versão (Normal, Complete, DLC+)
+
+Status logístico
+
+Organizado visualmente por blocos temáticos com destaque visual para facilitar a análise.
+
+🎯 Objetivo do Projeto
+
+Demonstrar habilidades em:
+
+Manipulação e tratamento de dados no Excel
+
+Extração de informações dentro de textos complexos
+
+Criação de relatórios organizados e funcionais
+
+Aplicação de lógica para categorização automatizada
+
+Construção de dashboards analíticos
+
+🚀 Competências Demonstradas
+
+Excel Intermediário/Avançado
+
+Funções de Texto
+
+Busca e Referência
+
+Filtros Dinâmicos
+
+Organização de Dados
+
+Pensamento Analítico
+
+
+
+
+
+
+
+---------------------------
+README profissional, estruturado e pronto para GitHub, com foco em portfólio de dados.
+
+📦 Controle de Importações – Dashboard em Excel
+📌 Sobre o Projeto
+
+Este projeto foi desenvolvido no laboratório da DIO (Digital Innovation One) com o objetivo de criar um dashboard de controle de importações de jogos adquiridos em e-commerce, utilizando Excel como ferramenta principal de tratamento, organização e análise de dados.
+
+O relatório permite acompanhar pedidos com base em:
+
+📦 Pedidos que estão para chegar
+
+⚠️ Pedidos com problema
+
+🔄 Pedidos que serão devolvidos
+
+🚚 Pedidos organizados por status (ex: Shipped)
+
+O projeto simula um cenário real de controle logístico e organização de pedidos internacionais.
+
+🎯 Objetivo
+
+Demonstrar habilidades em:
+
+Tratamento e limpeza de dados
+
+Extração de informações em textos não estruturados
+
+Cruzamento de dados entre planilhas
+
+Criação de relatórios dinâmicos
+
+Organização visual de dashboard
+
+🛠️ Tecnologias Utilizadas
+
+Microsoft Excel
+
+Funções de Texto
+
+Funções de Busca e Referência
+
+Filtros Dinâmicos
+
+Organização estrutural em múltiplas abas
+
+🔎 Principais Funções Aplicadas
+🔹 PROC V (Procura Vertical)
+
+Utilizado para cruzar informações entre a base de dados principal e o painel de controle, permitindo associação automática de dados como status e categorias.
+
+=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])
+🔹 Extração de Texto entre Colchetes
+
+Aplicação de funções para identificar e extrair informações específicas (como versão do jogo) dentro de textos estruturados com caracteres especiais.
+
+=PROCURAR("[";C20)
+
+=EXT.TEXTO(C20;
+(PROCURAR("[";C20)+1);
+(PROCURAR("]";C20)-(PROCURAR("[";C20)+1)))
+
+=SUBSTITUIR(D20;"[";"")
+
+Objetivo:
+
+Remover caracteres especiais
+
+Extrair versões como: Normal [XP], Complete [DLX], DLC+
+
+Padronizar dados para análise
+
+🔹 Filtro Dinâmico
+=FILTRO(PEDIDOS!$B:$L;PEDIDOS!$H:$H=B49)
+
+Permite:
+
+Filtrar pedidos automaticamente por status
+
+Atualização dinâmica do dashboard
+
+Separação inteligente de dados
+
+🔹 Tratamento de Texto (Versões)
+=SUBSTITUIR(SUBSTITUIR(DIREITA(C21;5);"[";"");"]";"")
+
+Usado para:
+
+Extrair códigos finais de versão
+
+Remover colchetes
+
+Padronizar informação de forma automatizada
+
+📊 Estrutura do Dashboard
+
+O relatório contém:
+
+Order ID
+
+Nome da Nota
+
+Console
+
+Nome do Jogo
+
+Versão
+
+Status Logístico
+
+Organizado em seções visuais destacadas para facilitar análise e tomada de decisão.
+
+🧠 Habilidades Demonstradas
+
+Excel Intermediário/Avançado
+
+Manipulação de dados
+
+Funções condicionais e de busca
+
+Tratamento de strings
+
+Organização lógica de relatórios
+
+Pensamento analítico
+
+🚀 Aplicabilidade
+
+Esse modelo pode ser adaptado para:
+
+Controle de estoque
+
+Gestão de pedidos
+
+Controle logístico
+
+Monitoramento de entregas
+
+Dashboards administrativos

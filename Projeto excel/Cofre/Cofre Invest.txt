@@ -1,0 +1,11 @@
+Organização e formatação correta dos dados no Excel, garantindo padronização dos campos, entendimento das dimensões e aplicação de data formatting. Criação de tabelas dinâmicas para análise eficiente, uso de intervalos nomeados para maior clareza e escalabilidade, tornando o projeto preparado para expansão e aplicação profissional.
+
+
+
+Descrição para LinkedIn (Post ou Projeto)
+
+📊 Projeto em Excel – Cofre Invest
+
+Simulador de investimentos mensais desenvolvido em Excel, com cálculo de patrimônio acumulado, projeção de dividendos e análise de cenários de curto, médio e longo prazo. Projeto focado em funções financeiras, organização de dados e aplicação prática do Excel no planejamento financeiro.
+
+🛠️ Skills: Excel • Funções Financeiras • Juros Compostos • Análise de Dados • Planejamento Financeiro
